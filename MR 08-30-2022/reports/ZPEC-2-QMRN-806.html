@@ -1,0 +1,1111 @@
+<HTML>
+   <head>
+      <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <META HTTP-EQUIV="refreshx" CONTENT="10">
+      <TITLE>ZPEC-2</TITLE>
+      <STYLE>
+TABLE  { font-family:tahoma,sans-serif; font-size:11px; border-collapse: collapse; }
+.table1  { font-family:tahoma,sans-serif; font-size:11px; border-collapse:separate; }
+.s {font-family:Arial;font-size:9px; position:relative; left:0; top:0;color:gray;}
+.l {font-family:Arial;font-size:11px; position:relative; left:0; top:0;font-weight: bold;color:#000080;text-transform: uppercase;line-break :strict}
+
+.la {font-family:Arial;font-size:10px; position:relative; left:0; top:0;color:#000080;text-transform: uppercase;line-break :strict;
+font-weight:bold;border-right:1px;border-right-style: solid; border-right-width: 1;border-bottom:1px;border-bottom-style: solid; border-bottom-width: 1;}
+.J {font-family:Arial;font-size:11px; position:relative; left:0; top:0;font-weight: bold;color:#000080;text-transform: uppercase;line-break :strict}
+.cl {font-family:Arial;font-size:11px; position:relative; left:0; top:0;font-weight: bold;color:#841429}
+.ll {font-family:Arial;font-size:14px; position:relative; left:0; top:0;font-weight: bold}
+.cell1 {color:gray;background-color: #FBF9EC;font-family:Arial;font-size:9px; position:relative; left:0; top:0; padding-left: 4; padding-right: 4; padding-top: 0; padding-bottom: 0}
+.cell1a {color:gray;background-color: #FBF9EC;font-family:Arial;font-size:9px; position:relative; left:0; top:0; padding-left: 4; padding-right: 4; padding-top: 0; padding-bottom: 0; border:solid 1}
+.cell1h {color:gray;background-color: #DFEAE4;font-family:Arial;font-size:9px; position:relative; left:0; top:0;border-bottom-style: solid; border-bottom-width: 1; padding-left: 1; padding-right: 1; padding-top: 0; padding-bottom: 0;border-bottom:1px solid #CCCCCC;}
+.cell2 {color:gray;background-color: #DFEAE4;font-family:Arial;font-size:9px; position:relative; left:0; top:0;border-left-style: solid; border-left-width: 1; border-right-width: 1; border-top-width: 1; border-bottom-style: solid; border-bottom-width: 1;border-bottom:1px solid #CCCCCC;border-left:1px solid #CCCCCC;}
+.cell1x {color:#841429;font-family:Arial;font-size:11px; position:relative; left:0; top:0;font-weight: bold;border-bottom-style: solid; border-bottom-width: 1; padding-left: 1; padding-right: 1; padding-top: 0; padding-bottom: 0;border-bottom:1px solid #CCCCCC;}
+.cell2x {color:#841429;font-family:Arial;font-size:11px; position:relative; left:0; top:0;font-weight: bold;border-left-style: solid; border-left-width: 1; border-right-width: 1; border-top-width: 0; padding-top: 0; padding-bottom: 0;border-bottom-style: solid; border-bottom-width: 1;border-bottom:1px solid #CCCCCC;border-left:1px solid #CCCCCC;}
+.cell3x {color:#841429;font-family:Arial;font-size:11px; position:relative; left:0; top:0;font-weight: bold;border-right-style: solid; border-right-width: 1; border-right-width: 1; border-top-width: 0; padding-top: 0; padding-bottom: 0;border-bottom-style: solid; border-bottom-width: 1;border-bottom:1px solid #CCCCCC;border-right:1px solid #CCCCCC;}
+.cell4 {color:#202080;font-family:Arial;font-size:11px; position:relative; left:0; top:0;font-weight: bold;border-bottom:1px solid #CCCCCC;border-left:1px solid #CCCCCC;}
+.cell5 {color:#202080;font-family:Arial;font-size:11px; position:relative; left:0; top:0;border-bottom:1px solid #CCCCCC;border-left:1px solid #CCCCCC;}
+.cell1t {color:gray;background-color: #DFEAE4;font-family:Arial;font-size:9px; position:relative; left:0; top:0;border-bottom-style: solid; border-bottom-width: 1; padding-left: 1; padding-right: 1; padding-top: 0; padding-bottom: 0;border-left-style: solid; border-left-width: 1;border-right:1px solid #CCCCCC;}
+.cell1t1 {color:gray;;font-family:Arial;font-size:11px; position:relative; left:0; top:0;border-bottom-style: solid; border-bottom-width: 1; padding-left: 1; padding-right: 1; padding-top: 0; padding-bottom: 0;border-right-style: solid; border-right-width: 1;}
+.cell1t2 {color:gray;;font-family:Arial;font-size:11px; position:relative; left:0; top:0;border-bottom-style: solid; border-bottom-width: 1; padding-left: 1; padding-right: 1; padding-top: 0; padding-bottom: 0;border-right-style: solid; border-right-width: 1;border-left-style: solid; border-left-width: 1;}
+.btn {background-color: #DFEAE4;font-family:tahoma,sans-serif; font-size:11px;}
+.celltop {border-top:1px solid black;}
+.cell2xx {color:#000080;font-family:Arial;font-size:11px; position:relative; left:0; top:0;font-weight: bold;border-left-style: solid; border-left-width: 1; border-right-width: 1; border-top-width: 0; padding-top: 0; padding-bottom: 0;border-bottom-style: solid; border-bottom-width: 1;border-bottom:1px solid #CCCCCC;border-left:1px solid #CCCCCC;}
+
+</STYLE>
+      <STYLE MEDIA="print">
+        
+.btn {display:none}
+html{margin: 0.75 auto; }
+html,body { width:auto;
+            zoom:80%;
+}
+</STYLE>
+      <style>
+        table.report-container {
+            //page-break-after: always;
+        }
+
+        thead.report-header {
+            display: table-header-group;
+        }
+
+        tfoot.report-footer {
+            display: table-footer-group;
+        }
+    </style>
+   </head>
+   <BODY stylex="background:#F2FEFB" onload="checkPrintOptions()">
+      <xml id="data">
+         <xslcopy-of select="data"></xslcopy-of>
+      </xml>
+      <DIV ALIGN="right"><INPUT CLASS="btn" TYPE="button" VALUE="Printable Version" id="button1" name="button1" onClick="openPrintable()"><INPUT CLASS="btn" TYPE="button" style="visibility:hidden;" VALUE="Print" id="printButton" name="printButton" onClick="window.print()">
+      </DIV>
+      <TABLE class="report-container" datasrc="#data" datafld="DRLG_OP_STATUS" HEIGHT="00%" BORDER="0" id="AutoNumber1" CELLPADDING="0" CELLSPACING="0" STYLE="BORDER-COLLAPSE: collapse; " BORDERCOLOR="#111111" WIDTH="100%">
+         <thead class="report-header">
+            <TR>
+               <TD colspanx="25">
+                  <TABLE WIDTH="100%" BORDERCOLOR="black" BORDER="0">
+                     <TBODY>
+                        <TR>
+                           <TD WIDTH="0%" nowrap="" ROWSPAN="2" COLSPAN="2" ALIGN="left" VALIGN="top" CLASS="ll" STYLE="BORDER-TOP-WIDTH: 1px; BORDER-LEFT-WIDTH: 1px; BORDER-BOTTOM: 1px solid; BORDER-RIGHT-WIDTH: 1px">
+                              <TABLE WIDTH="100%">
+                                 <TBODY>
+                                    <TR>
+                                       <TD nowrap="" CLASS="l1"><B>D&amp;WO Morning Report (Service Providers View)</B>
+                                       </TD>
+                                    </TR>
+                                    <TR>
+                                       <TD nowrap="" CLASS="l1"><B>Copyright 2010 Saudi Aramco. All Rights Reserved</B>
+                                       </TD>
+                                    </TR>
+                                    <TR>
+                                       <TD nowrap="" CLASS="l1"><B>Daily Onshore</B>
+                                       </TD>
+                                    </TR>
+                                    <TR>
+                                       <TD nowrap="" CLASS="l1"><B>(0500-0500) Saudi Aramco</B>
+                                       </TD>
+                                    </TR>
+                                 </TBODY>
+                              </TABLE>
+                           </TD>
+                           <TD WIDTH="0%" nowrap="" ROWSPAN="2" CLASS="s" ALIGN="left" VALIGN="top" STYLE="BORDER-RIGHT: 1px solid #cccccc; PADDING-RIGHT: 4px; BORDER-TOP: 1px solid; PADDING-LEFT: 4px; PADDING-BOTTOM: 1px; BORDER-LEFT: 1px solid ; PADDING-TOP: 1px; BORDER-BOTTOM: 1px solid ">
+                              <TABLE datasrc="#data" datafld="DRLG_OP_STATUS" BORDER="0" CELLSPACING="0" CELLPADDING="0" STYLE="BORDER-COLLAPSE: collapse" BORDERCOLOR="#111111">
+                                 <TBODY>
+                                    <TR>
+                                       <TD CLASS="s">Date</TD>
+                                    </TR>
+                                    <TR>
+                                       <TD CLASS="l">Tuesday  </TD>
+                                    </TR>
+                                    <TR>
+                                       <TD CLASS="l" nowrap="">08/30/2022</TD>
+                                    </TR>
+                                 </TBODY>
+                              </TABLE>
+                           </TD>
+                           <TD WIDTH="0%" nowrap="" ROWSPAN="2" COLSPAN="3" CLASS="s" ALIGN="left" VALIGN="top" STYLE="BORDER-RIGHT: 1px solid #cccccc; BORDER-TOP: 1px solid; BORDER-LEFT-WIDTH: 1px; BORDER-BOTTOM: 1px solid">
+                              <TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" STYLE="BORDER-COLLAPSE: collapse" BORDERCOLOR="#111111">
+                                 <TBODY>
+                                    <TR>
+                                       <TD CLASS="s" COLSPAN="3">Well No (Type) :</TD>
+                                    </TR>
+                                    <TR>
+                                       <TD CLASS="l" COLSPAN="3">QMRN-806</TD>
+                                    </TR>
+                                    <TR>
+                                       <TD CLASS="l" COLSPAN="3">
+                                (QMRN_806 will be used as drilling water supply well supporting Exploratory Conventional Well QMRN-3)
+                              </TD>
+                                    </TR>
+                                    <TR>
+                                       <TD CLASS="s">Charge #:</TD>
+                                       <TD CLASS="l"><span style="color:green">
+                                   (-
+                                                -
+                                               )
+                                                 </span>
+                                       </TD>
+                                    </TR>
+                                    <tr>
+                                       <td colspan="10"></td>
+                                    </tr>
+                                 </TBODY>
+                              </TABLE>
+                              <table borderx="1">
+                                 <tr>
+                                    <TD CLASS="s">Wellbores:</TD>
+                                    <TD CLASS="s">(0)</TD>
+                                    <TD CLASS="s" nowrap="true">QMRN_806_0</TD>
+                                 </tr>
+                              </table>
+                           </TD>
+                           <TD WIDTH="0%" nowrap="" ROWSPAN="2" ALIGN="left" VALIGN="top" CLASS="s" COLSPAN="2" STYLE="BORDER-RIGHT: 1px solid #cccccc; BORDER-TOP: 1px solid; BORDER-LEFT-WIDTH: 1px; BORDER-BOTTOM: 1px solid">
+                              <TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" STYLE="BORDER-COLLAPSE: collapse" BORDERCOLOR="#111111">
+                                 <TBODY>
+                                    <TR>
+                                       <TD CLASS="s">Rig </TD>
+                                    </TR>
+                                    <TR>
+                                       <TD CLASS="l">ZPEC-2</TD>
+                                    </TR>
+                                 </TBODY>
+                              </TABLE>
+                           </TD>
+                           <TD WIDTH="0%" nowrap="" COLSPAN="2" ALIGN="left" VALIGN="top" CLASS="s" STYLE="BORDER-RIGHT: 1px solid; BORDER-TOP: 1px solid; BORDER-LEFT-WIDTH: 1px; BORDER-BOTTOM: 1px solid #cccccc">
+                              <TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" STYLE="BORDER-COLLAPSE: collapse" BORDERCOLOR="#111111">
+                                 <TBODY>
+                                    <TR>
+                                       <TD CLASS="s">Foreman(s)</TD>
+                                       <TD CLASS="l"><a style="" id="W_FMAN_NAME_ARM" href="mailto:DOSSMA3K?subject=ZPEC-2@%20%20(08/30/2022)">Dossari, Mohammed Abdullah</a>/
+
+                <script>          
+                // ------------------------------------------------------------------------------
+                /*
+                this function will change the color of the W_FMAN_NAME Links to red of they are LTK (not aramco)
+                @version : 05/10/2010
+                @author Gharbi, Salem 
+                */
+                function changeW_FMAN_NAMELink(){
+
+                  //get all W_FMAN for 'TK1'
+                  var W_FMAN_ID_TK1='W_FMAN_NAME_TK1';
+                  var all_Links = document.getElementsByTagName('a');
+                  
+                  //change the link color to Red
+                  for(i = 0 ; i < all_Links.length ; i++){
+                  if(all_Links[i].id == W_FMAN_ID_TK1){
+                  all_Links[i].style.color = 'red';}}
+
+                  }//end function  changeW_FMAN_NAMELink
+                 </script><script type="text/javascript">
+                  function checkPrintOptions(){
+                    if (parent.frames.mainframe||parent.frames['mainframe']){
+                      button1.style.visibility='';
+                      printButton.style.visibility='hidden';
+                    }
+                    else{
+                      button1.style.visibility='hidden';
+                      printButton.style.visibility='';
+                    }
+                  }
+                  function openPrintable(){
+                    var var_RequestURL = 'https://sadkweb1.enp.aramco.com.sa:7012/sadkrep/p.jsp';
+                    var var_rac_num = '132456';
+                    var var_w_act_dt = '8/30/2022';
+                    var var_ep_a_num = '94942';
+                    var var_rig_cd = 'ZPEC-2';
+                    
+                    window.open(var_RequestURL+"?page=db/mr_data_ex.xsl,db/sql.xsl,db/mr_report_ex.xsl&rac_num="+var_rac_num+"&w_act_dt="+var_w_act_dt+"&ep_a_num="+var_ep_a_num+"&cachelife=0&ee=&rig_cd="+var_rig_cd,"_blank");
+                  }
+                  
+                  function selfPrint(){
+                    self.focus();
+                    self.print();
+                  }
+                </script><script>changeW_FMAN_NAMELink();</script>
+                                       </TD>
+                                    </TR>
+                                    <TR>
+                                       <TD CLASS="s">Engineer</TD>
+                                       <TD CLASS="l"><a style="" id="W_DRLG_ENG_NAME" href="mailto:BUHLAIMJ?subject=ZPEC-2@%20%20(08/30/2022)">Buhlaigah, Mustafa Jamal</a>/
+
+                                </TD>
+                                    </TR>
+                                    <TR>
+                                       <TD CLASS="s">Superintendent</TD>
+                                       <TD CLASS="l"><a href="mailto:SARRHF0A?subject=ZPEC-2@%20%20(08/30/2022)">Sarrani, Hassan Fahad</a>
+                                       </TD>
+                                    </TR>
+                                 </TBODY>
+                              </TABLE>
+                           </TD>
+                        </TR>
+                        <TR>
+                           <TD nowrap="" COLSPAN="2" ALIGN="left" VALIGN="top" CLASS="s" STYLE="BORDER-TOP-WIDTH: 1px; BORDER-RIGHT: 1px solid; BORDER-LEFT-WIDTH: 1px; BORDER-BOTTOM: 1px solid;">
+                              <div style="widthx:350;overflowx:hidden">
+                                 <TABLE width="100%" BORDER="0" CELLSPACING="0" CELLPADDING="0" STYLE="BORDER-COLLAPSE: collapse" BORDERCOLOR="#111111">
+                                    <TBODY>
+                                       <TR>
+                                          <td class="cell2x">
+                                             <table>
+                                                <tr>
+                                                   <TD CLASS="s">THURAYA</TD>
+                                                </tr>
+                                                <tr>
+                                                   <TD CLASS="l" nowrap="true">
+                                                      <div stylex="width:50;overflow:hidden;text-overflow:ellipsis">+8821677713736  </div>
+                                                   </TD>
+                                                </tr>
+                                             </table>
+                                          </td>
+                                          <td class="cell2x">
+                                             <table>
+                                                <tr>
+                                                   <TD CLASS="s">RIG FORMAN VSAT</TD>
+                                                </tr>
+                                                <tr>
+                                                   <TD CLASS="l" nowrap="true">
+                                                      <div stylex="width:50;overflow:hidden;text-overflow:ellipsis">013-5723576</div>
+                                                   </TD>
+                                                </tr>
+                                             </table>
+                                          </td>
+                                          <td class="cell2x">
+                                             <table>
+                                                <tr>
+                                                   <TD CLASS="s">OTHER VSAT</TD>
+                                                </tr>
+                                                <tr>
+                                                   <TD CLASS="l" nowrap="true">
+                                                      <div stylex="width:50;overflow:hidden;text-overflow:ellipsis">0135723085</div>
+                                                   </TD>
+                                                </tr>
+                                             </table>
+                                          </td>
+                                       </TR>
+                                    </TBODY>
+                                 </TABLE>
+                              </div>
+                           </TD>
+                        </TR>
+                     </TBODY>
+                  </TABLE>
+               </TD>
+            </TR>
+            <TR>
+               <TD colspanx="30">
+                  <TABLE WIDTH="100%" BORDERCOLOR="black" CLASS="table1" CELLPADDING="0" CELLSPACING="0" BORDER="0">
+                     <TBODY>
+                        <TR>
+                           <TD ALIGN="left" WIDTH="0%" VALIGN="top" CLASS="s" STYLE="BORDER-RIGHT: 1px solid #cccccc; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 1px; BORDER-LEFT: 1px solid; PADDING-TOP: 1px; BORDER-BOTTOM: 1px solid #cccccc">
+                              <TABLE WIDTH="100%" BORDER="0" CELLSPACING="0" CELLPADDING="0" STYLE="BORDER-COLLAPSE: collapse" BORDERCOLOR="#111111">
+                                 <TBODY>
+                                    <TR>
+                                       <TD CLASS="s">Depth</TD>
+                                    </TR>
+                                    <TR>
+                                       <TD CLASS="l" ALIGN="middle">0</TD>
+                                    </TR>
+                                 </TBODY>
+                              </TABLE>
+                           </TD>
+                           <TD WIDTH="0%" nowrap="" ALIGN="left" VALIGN="top" CLASS="s" STYLE="BORDER-TOP-WIDTH: 1px; BORDER-RIGHT: 1px solid #cccccc; BORDER-LEFT-WIDTH: 1px; BORDER-BOTTOM: 1px solid #cccccc">
+                              <TABLE WIDTH="0%" BORDER="0" CELLSPACING="0" CELLPADDING="0" STYLE="BORDER-COLLAPSE: collapse" BORDERCOLOR="#111111">
+                                 <TBODY>
+                                    <TR>
+                                       <TD CLASS="s">Last 24 hr operations</TD>
+                                    </TR>
+                                    <TR>
+                                       <TD CLASS="l">MOVE ARAMCO OFFICE AND CAMP, WAIT ON DAYLIGHT</TD>
+                                    </TR>
+                                 </TBODY>
+                              </TABLE>
+                           </TD>
+                           <TD WIDTH="0%" nowrap="" ALIGN="left" VALIGN="top" CLASS="s" STYLE="BORDER-TOP-WIDTH: 1px; BORDER-RIGHT: 1px solid #cccccc; BORDER-LEFT-WIDTH: 1px; BORDER-BOTTOM: 1px solid #cccccc">
+                              <TABLE WIDTH="0%" BORDER="0" CELLSPACING="0" CELLPADDING="0" STYLE="BORDER-COLLAPSE: collapse" BORDERCOLOR="#111111">
+                                 <TBODY>
+                                    <TR>
+                                       <TD CLASS="s">Next 24 hr plan</TD>
+                                    </TR>
+                                    <TR>
+                                       <TD CLASS="l">RIG UP ON QMRN-806 &amp; WAIT ON DAYLIGHT.</TD>
+                                    </TR>
+                                 </TBODY>
+                              </TABLE>
+                           </TD>
+                           <TD WIDTH="0%" ALIGN="left" VALIGN="top" CLASS="s" STYLE="white-space:normal;BORDER-TOP-WIDTH: 1px; BORDER-RIGHT: 1px solid #cccccc; BORDER-LEFT-WIDTH: 1px; BORDER-BOTTOM: 1px solid #cccccc">
+                              <TABLE BORDER="0" CELLSPACING="0" CELLPADDING="0" STYLE="white-space:normal;BORDER-COLLAPSE: collapse" BORDERCOLOR="#111111">
+                                 <TBODY>
+                                    <TR>
+                                       <TD CLASS="s">Location</TD>
+                                    </TR>
+                                    <TR>
+                                       <TD CLASS="l" ROWSPAN="2">QMRN-806</TD>
+                                    </TR>
+                                 </TBODY>
+                              </TABLE>
+                           </TD>
+                           <TD WIDTH="0%" ALIGN="middle" VALIGN="top" STYLE="BORDER-TOP-WIDTH: 1px; BORDER-RIGHT: 1px solid #cccccc; BORDER-LEFT-WIDTH: 1px; BORDER-BOTTOM: 1px solid #cccccc">
+                              <TABLE WIDTH="0%" BORDER="0" CELLSPACING="0" CELLPADDING="0" BORDERCOLOR="#111111" stylex="border-collapse: collapse">
+                                 <TBODY>
+                                    <TR>
+                                       <TD CLASS="s" nowrap="">Days Since Spud/Comm (Date)</TD>
+                                    </TR>
+                                    <TR>
+                                       <TD align="middle" CLASS="s"><span class="l">0.0</span>
+                                (@)       
+                                
+                                </TD>
+                                    </TR>
+                                 </TBODY>
+                              </TABLE>
+                           </TD>
+                           <TD WIDTH="25%" COLSPAN="3" VALIGN="top" STYLE="BORDER-TOP-WIDTH: 1px; BORDER-RIGHT: 1px solid; BORDER-LEFT-WIDTH: 1px; BORDER-BOTTOM: 1px solid #cccccc">
+                              <TABLE WIDTH="100%" BORDER="0" NOWRAP="" ALIGN="left" VALIGN="top" CELLSPACING="0" CELLPADDING="0" STYLEx=" BORDER-RIGHT: 1px; BORDER-LEFT-WIDTH: 1px; BORDER-BOTTOM: 1px ">
+                                 <THEAD datasrc="#data" datafld="DRLG_FM_TOPS" BORDER="0" CELLSPACING="0" CELLPADDING="0" WIDTH="100%">
+                                    <TR>
+                                       <TD CLASS="s" COLSPAN="3">Formation tops </TD>
+                                    </TR>
+                                 </THEAD>
+                                 <TBODY></TBODY>
+                              </TABLE>
+                           </TD>
+                        </TR>
+                        <TR>
+                           <TD nowrap="" ALIGN="left" VALIGN="top" STYLE="BORDER-TOP-WIDTH: 1px; BORDER-RIGHT: 1px solid #cccccc; BORDER-LEFT: 1px solid; BORDER-BOTTOM: 1px solid #cccccc">
+                              <TABLE WIDTH="100%" BORDER="0" CELLSPACING="0" CELLPADDING="0" STYLE="BORDER-COLLAPSE: collapse" BORDERCOLOR="#111111">
+                                 <TBODY>
+                                    <TR>
+                                       <TD CLASS="s" nowrap="">Prev. Depth</TD>
+                                    </TR>
+                                    <TR>
+                                       <TD CLASS="l" ALIGN="middle">0</TD>
+                                    </TR>
+                                 </TBODY>
+                              </TABLE>
+                           </TD>
+                           <TD WIDTH="0%" nowrap="" ALIGN="left" VALIGN="top" STYLE="BORDER-TOP-WIDTH: 1px; BORDER-RIGHT: 1px solid #cccccc; BORDER-LEFT-WIDTH: 1px; BORDER-BOTTOM: 1px solid #cccccc" colspan="2">
+                              <TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" BORDERCOLOR="#111111" WIDTH="100%" stylex="border-collapse: collapse">
+                                 <TBODY>
+                                    <TR>
+                                       <TD CLASS="s" nowrap="" ALIGN="middle">Liner Size</TD>
+                                       <TD CLASS="s" ALIGN="middle">TOL</TD>
+                                       <TD CLASS="s" ALIGN="middle">MD</TD>
+                                       <TD CLASS="s" ALIGN="middle">TVD</TD>
+                                    </TR>
+                                    <TR>
+                                       <TD CLASS="l" ALIGN="middle"></TD>
+                                       <TD ALIGN="middle" CLASS="l"></TD>
+                                       <TD ALIGN="middle" CLASS="l"></TD>
+                                       <TD ALIGN="middle" CLASS="l"></TD>
+                                    </TR>
+                                 </TBODY>
+                              </TABLE>
+                           </TD>
+                           <TD WIDTH="0%" ALIGN="left" VALIGN="top" STYLE="BORDER-TOP-WIDTH: 1px; BORDER-RIGHT: 1px solid #cccccc; BORDER-LEFT-WIDTH: 1px; BORDER-BOTTOM: 1px solid #cccccc">
+                              <TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" BORDERCOLOR="#111111" WIDTH="100%" stylex="border-collapse: collapse">
+                                 <TBODY>
+                                    <TR>
+                                       <TD CLASS="s" nowrap="" ALIGN="middle">Last Csg Size</TD>
+                                       <TD CLASS="s" ALIGN="middle">MD</TD>
+                                       <TD CLASS="s" ALIGN="middle">TVD</TD>
+                                    </TR>
+                                    <TR>
+                                       <TD CLASS="l" ALIGN="middle"></TD>
+                                       <TD CLASS="l" ALIGN="middle"></TD>
+                                       <TD CLASS="l" ALIGN="middle"></TD>
+                                    </TR>
+                                 </TBODY>
+                              </TABLE>
+                           </TD>
+                           <TD nowrap="" ALIGN="left" VALIGN="top" STYLE=" BORDER-TOP-WIDTH: 1px; BORDER-RIGHT: 1px solid #cccccc; BORDER-LEFT-WIDTH: 1px; BORDER-BOTTOM: 1px solid #cccccc">
+                              <TABLE WIDTH="100%" BORDER="0" CELLSPACING="0" CELLPADDING="0" STYLE="BORDER-COLLAPSE: collapse" BORDERCOLOR="#111111">
+                                 <TBODY>
+                                    <TR>
+                                       <TD CLASS="s">Footage</TD>
+                                    </TR>
+                                    <TR>
+                                       <TD CLASS="l" ALIGN="middle">0</TD>
+                                    </TR>
+                                 </TBODY>
+                              </TABLE>
+                           </TD>
+                           <TD WIDTH="0%" nowrap="" ALIGN="middle" VALIGN="top" STYLE="BORDER-TOP-WIDTH: 1px; BORDER-RIGHT: 1px solid; BORDER-LEFT-WIDTH: 1px; BORDER-BOTTOM: 1px solid #cccccc">
+                              <TABLE WIDTH="100%" BORDER="0" CELLSPACING="0" CELLPADDING="0" BORDERCOLOR="#111111" stylex="border-collapse: collapse">
+                                 <TBODY>
+                                    <TR>
+                                       <TD CLASS="s" nowrap="">Circ %</TD>
+                                    </TR>
+                                    <TR>
+                                       <TD align="middle" CLASS="s"><span class="l"></span>
+                                       </TD>
+                                    </TR>
+                                 </TBODY>
+                              </TABLE>
+                           </TD>
+                        </TR>
+                     </TBODY>
+                  </TABLE>
+               </TD>
+            </TR>
+         </thead>
+         <TBODY>
+            <TR>
+               <TD CLASS="cell1t2" nowrapx="" ALIGN="left" VALIGN="top" stylex="border-left-style: solid; border-left-width: 1; border-right-style: solid; border-right-width: 1; border-top-width: 1; border-bottom-width: 1" colspanx="10">
+                  <DIV ID="oDiv" STYLE="OVERFLOW: autox; HEIGHT: auto ">
+                     <table width="100%" height="100%" border="0" BORDERCOLOR="black" rules="rows">
+                        <tr>
+                           <td valign="top" height="95%">
+                              <TABLE datasrcx="#data" datafldx="DRLG_OP_SMRY" BORDER="0" WIDTH="100%" id="AutoNumber2" STYLE="BORDER-COLLAPSE: collapse; " BORDERCOLOR="#111111" CELLPADDING="2" datapagesizex="5">
+                                 <THEAD>
+                                    <TR>
+                                       <TD CLASS="cell1h" ALIGN="middle" rowspan="2"> Hrs</TD>
+                                       <TD CLASS="cell2" ALIGN="right" rowspan="2"> (From</TD>
+                                       <TD CLASS="cell1h" rowspan="2"> -</TD>
+                                       <TD CLASS="cell1h" s="" rowspan="2">To)</TD>
+                                       <TD CLASS="cell2" nowrap="" WIDTH="0%" ALIGN="middle" rowspan="2"> Lateral</TD>
+                                       <TD CLASS="cell2" nowrap="" WIDTH="0%" ALIGN="middle" rowspan="2"> Hole size</TD>
+                                       <TD CLASS="cell2" nowrap="" WIDTH="0%" ALIGN="middle" rowspan="2"> Cat.</TD>
+                                       <TD CLASS="cell2" nowrap="" WIDTH="0%" ALIGN="left" rowspan="2"> Major OP</TD>
+                                       <TD CLASS="cell2" nowrap="" WIDTH="0%" ALIGN="middle" rowspan="2"> Action</TD>
+                                       <TD CLASS="cell2" nowrap="" WIDTH="0%" ALIGN="middle" rowspan="2"> Object</TD>
+                                       <TD CLASS="cell2" nowrap="" WIDTH="0%" ALIGN="middle" rowspan="2"> Resp. Co</TD>
+                                       <TD CLASS="cell2" nowrap="false" WIDTH="0%" ALIGN="middle" colspan="2">Hole depth</TD>
+                                       <TD CLASS="cell2" nowrap="false" WIDTH="0%" ALIGN="middle" colspan="2">Event depth</TD>
+                                       <TD CLASS="cell2" WIDTH="100%" ALIGN="middle" rowspan="2"> Summary of Operations</TD>
+                                    </TR>
+                                    <TR>
+                                       <TD CLASS="cell2" nowrap="false" WIDTH="0%" ALIGN="middle">Start</TD>
+                                       <TD CLASS="cell2" nowrap="false" WIDTH="0%" ALIGN="middle">End</TD>
+                                       <TD CLASS="cell2" nowrap="false" WIDTH="0%" ALIGN="middle">Start</TD>
+                                       <TD CLASS="cell2" nowrap="false" WIDTH="0%" ALIGN="middle">End</TD>
+                                    </TR>
+                                 </THEAD>
+                                 <TBODY>
+                                    <TR>
+                                       <TD CLASS="cell1x" VALIGN="top" ALIGN="right">12.0</TD>
+                                       <TD CLASS="cell2x" VALIGN="top" ALIGN="right">0500</TD>
+                                       <TD CLASS="cell1x" VALIGN="top" ALIGN="center"> -</TD>
+                                       <TD CLASS="cell1x" VALIGN="top" ALIGN="right">1700</TD>
+                                       <TD CLASS="cell2x" VALIGN="top" ALIGN="left">0</TD>
+                                       <TD CLASS="cell2x" VALIGN="top" ALIGN="left">&nbsp;</TD>
+                                       <TD CLASS="cell2x" VALIGN="top" ALIGN="left">N</TD>
+                                       <TD CLASS="cell2x" VALIGN="top" ALIGN="left">RM</TD>
+                                       <TD CLASS="cell2x" VALIGN="top" ALIGN="left">RM</TD>
+                                       <TD CLASS="cell2x" VALIGN="top" ALIGN="left">NA</TD>
+                                       <TD CLASS="cell2x" VALIGN="top" ALIGN="left">RIG</TD>
+                                       <TD CLASS="cell2x" VALIGN="top" ALIGN="left">0</TD>
+                                       <TD CLASS="cell2x" VALIGN="top" ALIGN="left">0</TD>
+                                       <TD CLASS="cell2x" VALIGN="top" ALIGN="left">&nbsp;</TD>
+                                       <TD CLASS="cell2x" VALIGN="top" ALIGN="left">&nbsp;</TD>
+                                       <TD CLASS="cell2x" VALIGN="top" WIDTH="100%" ALIGN="left" wrap="soft">HELD SAFETY MEETING WITH ALL PERSONNEL INVOLVED.<br/><br/>*RIG DOWN ON AMAD-815 .................... 100%.<br/>*RIG MOVE TO QMRN-806......................... 100%.<br/>*RIG UP ON QMRN-806 ............................... 15%<br/><br/>*MOVE ARAMCO OFFICE AND CAMP..........100%</TD>
+                                    </TR>
+                                    <TR>
+                                       <TD CLASS="cell1x" VALIGN="top" ALIGN="right">12.0</TD>
+                                       <TD CLASS="cell2x" VALIGN="top" ALIGN="right">1700</TD>
+                                       <TD CLASS="cell1x" VALIGN="top" ALIGN="center"> -</TD>
+                                       <TD CLASS="cell1x" VALIGN="top" ALIGN="right">0500</TD>
+                                       <TD CLASS="cell2x" VALIGN="top" ALIGN="left">0</TD>
+                                       <TD CLASS="cell2x" VALIGN="top" ALIGN="left">&nbsp;</TD>
+                                       <TD CLASS="cell2x" VALIGN="top" ALIGN="left">N</TD>
+                                       <TD CLASS="cell2x" VALIGN="top" ALIGN="left">RM</TD>
+                                       <TD CLASS="cell2x" VALIGN="top" ALIGN="left">RM</TD>
+                                       <TD CLASS="cell2x" VALIGN="top" ALIGN="left">NA</TD>
+                                       <TD CLASS="cell2x" VALIGN="top" ALIGN="left">RIG</TD>
+                                       <TD CLASS="cell2x" VALIGN="top" ALIGN="left">0</TD>
+                                       <TD CLASS="cell2x" VALIGN="top" ALIGN="left">0</TD>
+                                       <TD CLASS="cell2x" VALIGN="top" ALIGN="left">&nbsp;</TD>
+                                       <TD CLASS="cell2x" VALIGN="top" ALIGN="left">&nbsp;</TD>
+                                       <TD CLASS="cell2x" VALIGN="top" WIDTH="100%" ALIGN="left" wrap="soft">WAIT ON DAYLIGHT</TD>
+                                    </TR>
+                                 </TBODY>
+                              </TABLE>
+                              <TABLE datasrc="#data" datafld="DRLG_OP_STATUS" BORDER="0" WIDTH="100%" id="AutoNumber2" STYLE="BORDER-COLLAPSE: collapse; " BORDERCOLOR="#111111" CELLPADDING="2" datapagesizex="5">
+                                 <TBODY>
+                                    <TR>
+                                       <TD CLASS="l" nowrapx="true">OBJECTIVE:<br/>QMRN_806 WILL BE USED AS DRILLING WATER SUPPLY WELL SUPPORTING EXPLORATORY CONVENTIONAL WELL QMRN-3<br/>THE WELL IS LOCATED 0.502 KM S OF AMAD-814 AND 1.629 KM S33E OF AMAD-2<br/>THE WELL SHOULD BE COMPLETED WITH 8-1/2" OPEN HOLE<br/>=========================================<br/>- NEXT LOCATION:<br/>* WELL NAME: N/A<br/>* REQUEST DATE: N/A.<br/>* LOCATION READINESS: N/A<br/>=========================<br/>* RIG RELEASED FROM HIRN-801 ON 08/24/2022 @ 17:00HRS.<br/>- MOVE DISTANCE FROM AMAD-815 TO QMRN-806 =+/-109 KM<br/>- RIG MOVE TRUCKS: 23 X FLAT BED & 5 X LOW BED.<br/>- 3 X CRANES & 1X WHEEL LOADER WITH VALID CERTIFICATES.<br/>- 2 X RIGGER-I & 2 X TRUCK PUSHER<br/>=======================================<br/>=========================================================<br/>WELL DESIGN:-<br/>- 24" CSG @ -/+ 120' RKB<br/>- 18-5/8" CSG. @ +/- 1255' RKB<br/>- 13-3/8" CSG. @ +/- 1875' RKB<br/>- 9-5/8" CSG. @ +/- 2605' RKB<br/>- 8-1/2" OPEN HOLE. 3525' RKB<br/>=================================================<br/>** ELEVATION FROM RIG FLOOR TO GROUND LEVEL: 25 FT.<br/>** ARAMCOLINK DATA TRANSMISSION SERVICE WILL BE USED FOR THIS WELL TO PICK UP CSG POINTS AND FORMATION TOPS BY RCC TEAM.<br/>- NO COVERAGE FOR RADIO CHECK & CONDUCTED A DAILY PHONE COMMUNICATION CHECK WITH DHAHRAN DRILLING ECC. OK.<br/>===============<br/>*RIG LOCATION: 655 KM FROM DMG, TAKE SHAYBAH ROAD 222 KM,TURN LEFT 12 KM SKID ROAD (FOLLOW RIG SIGN BOARD)<br/>=======================<br/>JOURNEY MANAGEMENT PLAN :<br/>CALL ZPEC-2 OFFICE AT 013-5723576 PRIOR TO TURNING ON SKID ROAD, NO SIGNAL FROM THAT POINT, PROVIDE - NAME OF COMPANY, <br/>NUMBER OF PERSONNEL, COLOR OF VEHICLE AND EMERGENCY CONTACT NUMBER OF BASE PERSONNEL, ALL VEHICLES SHOULD HAVE A SUPPLY OF DRINKING WATER.<br/>==========================================<br/>SAFETY DISCUSS:<br/>TOPIC DISCUSS: RIG UP OPERATION<br/>DRILLS: NONE<br/>STOP CARDS: NON<br/>===========<br/>RENTAL TOOLS:<br/>=============<br/>SERVICE COMPANY:<br/>===============<br/>ARAMCO: <br/>===============<br/>ZPEC TANKERS, HEAVY EQUIPMENT & VEHICLES ON LOCATION:<br/>* 8 RAW WATER TANKERS<br/>* 1 ZPEC 4X4 AMBULANCE CAR.<br/>* 1 ZPEC PICK-UP CAR.<br/>=======================<br/>* WATER HAULAGE ZPEC TANKERS:<br/>WATER SOURCE: SHYB-1007 .ROUND TRIP DISTANCE: 0 KM<br/>- DAILY NUMBER OF TRIPS = 0 TRIPS; TOTAL NUMBER OF TRIPS = 0 TRIPS.<br/>- DAILY DISTANCE =<br/>- DAILY VOLUME = <br/><br/>SWEET WATER FOR CEMENT JOB: <br/>=============<br/>*SWEET WATER: NUMBER OF TRIP= <br/>=========================<br/>WASTE MANAGEMENT KPI:<br/>- DRILLING WASTE CUTTINGS: DAILY= <br/>- DRILLING WASTE FLUIDS: DAILY=<br/><br/>VACUUM TANKERS: <br/>DRESS#1003637285 TMD/TUWAIRESH<br/>DAILY TRIPS: 0/TOTAL TRIPS : 2,TRUCK PLATE NO:9146<br/>                       1/ TOTAL TRIPS : 10,TRUCK PLATE NO:2564<br/>                       1/ TOTAL TRIPS : 1,TRUCK PLATE NO:4775<br/>                       1/ TOTAL TRIPS : 1,TRUCK PLATE NO:7336<br/>                       1/ TOTAL TRIPS : 1,TRUCK PLATE NO:8803<br/>=============<br/>MUD PIT RECYCLED WATER VOLUME (M3):<br/>- DAILY: RECYCLED WATER VOLUME: 0 M3.<br/>- TOTAL: RECYCLED WATER VOLUME:  M3.</TD>
+                                    </TR>
+                                    <TR>
+                                       <TD>Remarks</TD>
+                                    </TR>
+                                    <TR>
+                                       <TD CLASS="l" nowrapx="true"></TD>
+                                    </TR>
+                                 </TBODY>
+                              </TABLE>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td valign="bottom" class="celltop">
+                              <TABLE valign="bottom" datasrc="#data" datafld="DRLG_DEV_SURV" BORDER="0" WIDTH="100%" id="AutoNumber2" STYLE="BORDER-COLLAPSE: collapse;" BORDERCOLOR="#111111" CELLPADDING="2">
+                                 <thead>
+                                    <TR>
+                                       <TD CLASS="cell1h" nowrap="" WIDTH="0%" ALIGN="middle"> Lateral</TD>
+                                       <TD CLASS="cell2" nowrap="" ALIGN="middle">Survey MD</TD>
+                                       <TD CLASS="cell2" nowrap="" ALIGN="middle">Angle</TD>
+                                       <TD CLASS="cell2" nowrap="" ALIGN="middle">Azimuth</TD>
+                                       <TD CLASS="cell2" nowrap="" ALIGN="middle">CLength</TD>
+                                       <TD CLASS="cell2" nowrap="" ALIGN="middle">TVD</TD>
+                                       <TD CLASS="cell2" nowrap="" ALIGN="middle">N/S(-)Coordinate</TD>
+                                       <TD CLASS="cell2" nowrap="" ALIGN="middle">E/W(-)Coordinate</TD>
+                                       <TD CLASS="cell2" nowrap="" ALIGN="middle">Vertical Sec</TD>
+                                       <TD CLASS="cell2" nowrap="" ALIGN="middle" widthx="100%">DLS</TD>
+                                    </TR>
+                                 </thead>
+                                 <TBODY></TBODY>
+                              </TABLE>
+                           </td>
+                        </tr>
+                     </table>
+                  </DIV>
+               </TD>
+            </TR>
+            <TR>
+               <TD>
+                  <TABLE WIDTH="100%" BORDERCOLOR="black" BORDER="0">
+                     <TBODY>
+                        <TR>
+                           <TD CLASS="cell1t" ALIGN="middle" WIDTH="0%">MUD DATA</TD>
+                           <TD CLASS="cell1t1" nowrap="" WIDTH="100%" ALIGN="left" VALIGN="top" COLSPAN="10" stylex="border-left-style: solid; border-left-width: 1; border-right-style: solid; border-right-width: 1; border-top-width: 1; border-bottom-width: 1">
+                              <TABLE datasrc="#data" datafld="MUD_DETL" BORDER="0" WIDTH="100%" id="AutoNumber2" STYLE="BORDER-COLLAPSE: collapse" BORDERCOLOR="#111111" CELLPADDING="2">
+                                 <TBODY></TBODY>
+                              </TABLE>
+                           </TD>
+                        </TR>
+                        <TR>
+                           <TD CLASS="cell1t" ALIGN="middle">MUD TREATMENT</TD>
+                           <TD CLASS="cell1t1" nowrap="" ALIGN="left" VALIGN="top" COLSPAN="10" stylex="border-left-style: solid; border-left-width: 1; border-right-style: solid; border-right-width: 1; border-top-width: 1; border-bottom-width: 1">
+                              <TABLE datasrc="#data" datapagesize="1" datafld="MUD_TREAT" BORDER="0" WIDTH="100%" id="AutoNumber2" STYLE="BORDER-COLLAPSE: collapse" BORDERCOLOR="#111111" CELLPADDING="2" datafldx="">
+                                 <TBODY>
+                                    <TR>
+                                       <TD CLASSx="cell2x" WIDTH="90%">
+                                          <table>
+                                             <tr></tr>
+                                          </table>
+                                       </TD>
+                                       <TD CLASSx="cell2x" WIDTH="0%">
+                                          <TABLE>
+                                             <TBODY>
+                                                <TR>
+                                                   <TD CLASS="l"></TD>
+                                                </TR>
+                                                <TR>
+                                                   <TD nowrap="" CLASS="l"></TD>
+                                                </TR>
+                                             </TBODY>
+                                          </TABLE>
+                                       </TD>
+                                    </TR>
+                                 </TBODY>
+                              </TABLE>
+                           </TD>
+                        </TR>
+                        <TR>
+                           <TD CLASS="cell1t" ALIGN="middle">BIT DATA</TD>
+                           <TD CLASS="cell1t1" nowrap="" ALIGN="left" VALIGN="top" COLSPAN="10" stylex="border-left-style: solid; border-left-width: 1; border-right-style: solid; border-right-width: 1; border-top-width: 1; border-bottom-width: 1">
+                              <TABLE>
+                                 <TBODY></TBODY>
+                              </TABLE>
+                           </TD>
+                        </TR>
+                        <TR>
+                           <TD CLASS="cell1t" ALIGN="middle">DRILL STRING</TD>
+                           <TD CLASS="cell1t1" nowrapx="" ALIGN="left" VALIGN="top" COLSPAN="10" stylex="border-left-style: solid; border-left-width: 1; border-right-style: solid; border-right-width: 1; border-top-width: 1; border-bottom-width: 1"><span style="color:blue"> </span>
+                              <TABLE datasrc="#data" datafld="DRLG_RUN" BORDER="0" WIDTH="100%" id="AutoNumber2" STYLE="BORDER-COLLAPSE: collapse" BORDERCOLOR="#111111" CELLPADDING="2">
+                                 <TBODY></TBODY>
+                              </TABLE>
+                              <table>
+                                 <tr>
+                                    <td>
+                                       <table widht="100%" border="0" STYLE="BORDER-COLLAPSE: collapse" BORDERCOLOR="#111111" CELLPADDING="2">
+                                          <thead>
+                                             <tr>
+                                                <th CLASS="cell1h" nowrap="" ALIGN="middle"> Order </th>
+                                                <th CLASS="cell2" ALIGN="middle"> Component </th>
+                                                <th CLASS="cell2" ALIGN="middle"> Provider </th>
+                                                <th CLASS="cell2" ALIGN="middle"> Nominal Size </th>
+                                                <th CLASS="cell2" ALIGN="middle"> # Joints </th>
+                                                <th CLASS="cell2" ALIGN="middle"> OD Size </th>
+                                                <th CLASS="cell2" ALIGN="middle"> ID Size </th>
+                                                <th CLASS="cell2" ALIGN="middle"> Length</th>
+                                                <th CLASS="cell2" ALIGN="middle"> Top Thread</th>
+                                                <th CLASS="cell2" ALIGN="middle"> Bottom Thread</th>
+                                                <th CLASS="cell2" ALIGN="middle"> Weight</th>
+                                                <th CLASS="cell2" ALIGN="middle"> Grade</th>
+                                                <th CLASS="cell2" ALIGN="middle"> Class</th>
+                                                <th CLASS="cell2" ALIGN="middle" style="border-left:1px solid #CCCCCC;"> Serial #</th>
+                                             </tr>
+                                          </thead>
+                                          <tbody></tbody>
+                                       </table>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </TD>
+                        </TR>
+                        <TR>
+                           <TD CLASS="cell1t" ALIGN="middle">Miscellaneous</TD>
+                           <TD CLASS="cell1t1" nowrap="" ALIGN="left" VALIGN="top" COLSPAN="10" stylex="border-left-style: solid; border-left-width: 1; border-right-style: solid; border-right-width: 1; border-top-width: 1; border-bottom-width: 1">
+                              <TABLE datasrc="#data" datafld="DRLG_OP_STATUS" BORDER="0" WIDTH="100%" id="AutoNumber2" STYLE="BORDER-COLLAPSE: collapse" BORDERCOLOR="#111111" CELLPADDING="2">
+                                 <TBODY>
+                                    <TR>
+                                       <TD CLASS="cell1x">
+                                          <TABLE WIDTH="100%">
+                                             <TBODY>
+                                                <TR>
+                                                   <TD COLSPAN="2" CLASS="cell1" nowrap=""> BOP Test</TD>
+                                                </TR>
+                                                <TR>
+                                                   <TD ALIGN="middle" CLASS="l"></TD>
+                                                   <TD CLASS="s"></TD>
+                                                </TR>
+                                             </TBODY>
+                                          </TABLE>
+                                       </TD>
+                                       <TD CLASS="cell2x">
+                                          <TABLE WIDTH="100%">
+                                             <TBODY>
+                                                <TR>
+                                                   <TD COLSPAN="2" CLASS="cell1" nowrap=""> BOP Drills</TD>
+                                                </TR>
+                                                <TR>
+                                                   <TD nowrap="" ALIGN="middle" CLASS="l"></TD>
+                                                   <TD CLASS="s"></TD>
+                                                </TR>
+                                             </TBODY>
+                                          </TABLE>
+                                       </TD>
+                                       <TD CLASS="cell2x">
+                                          <TABLE WIDTH="100%">
+                                             <TBODY>
+                                                <TR>
+                                                   <TD COLSPAN="2" CLASS="cell1"> Wind</TD>
+                                                </TR>
+                                                <TR>
+                                                   <TD ALIGN="middle" nowrap="" CLASS="l">NORMAL</TD>
+                                                   <TD CLASS="s"></TD>
+                                                </TR>
+                                             </TBODY>
+                                          </TABLE>
+                                       </TD>
+                                       <TD CLASS="cell2x">
+                                          <TABLE WIDTH="100%">
+                                             <TBODY>
+                                                <TR>
+                                                   <TD COLSPAN="2" CLASS="cell1"> Sea</TD>
+                                                </TR>
+                                                <TR>
+                                                   <TD ALIGN="middle" CLASS="l">N/A</TD>
+                                                   <TD CLASS="s"></TD>
+                                                </TR>
+                                             </TBODY>
+                                          </TABLE>
+                                       </TD>
+                                       <TD CLASS="cell2x">
+                                          <TABLE WIDTH="100%">
+                                             <TBODY>
+                                                <TR>
+                                                   <TD COLSPAN="2" CLASS="cell1"> Weather</TD>
+                                                </TR>
+                                                <TR>
+                                                   <TD ALIGN="middle" CLASS="l">HOT</TD>
+                                                   <TD CLASS="s"></TD>
+                                                </TR>
+                                             </TBODY>
+                                          </TABLE>
+                                       </TD>
+                                       <TD CLASS="cell2x">
+                                          <TABLE WIDTH="100%">
+                                             <TBODY>
+                                                <TR>
+                                                   <TD COLSPAN="2" CLASS="cell1"> DSLTA</TD>
+                                                </TR>
+                                                <TR>
+                                                   <TD nowrap="" CLASS="l"></TD>
+                                                   <TD CLASS="s"></TD>
+                                                </TR>
+                                             </TBODY>
+                                          </TABLE>
+                                       </TD>
+                                       <TD CLASS="cell2x" WIDTH="100%">
+                                          <TABLE WIDTH="100%">
+                                             <TBODY>
+                                                <TR>
+                                                   <TD COLSPAN="2" CLASS="cell1"> Safety Meeting</TD>
+                                                </TR>
+                                                <TR>
+                                                   <TD CLASS="l"></TD>
+                                                   <TD CLASS="s"></TD>
+                                                </TR>
+                                             </TBODY>
+                                          </TABLE>
+                                       </TD>
+                                    </TR>
+                                    <tr>
+                                       <td colspan="7">
+                                          <TABLE BORDER="1" width="700">
+                                             <TR>
+                                                <th class="s"> Real-Time Data Quality  </th>
+                                                <TH style="color:red">No Transmission</TH>
+                                             </TR>
+                                          </TABLE>
+                                       </td>
+                                    </tr>
+                                 </TBODY>
+                              </TABLE>
+                           </TD>
+                        </TR>
+                        <TR>
+                           <TD CLASS="cell1t" ALIGN="middle">Personnel and Services Information</TD>
+                           <TD CLASS="cell1t1" nowrap="" ALIGN="left" VALIGN="top" COLSPAN="10" stylex="border-left-style: solid; border-left-width: 1; border-right-style: solid; border-right-width: 1; border-top-width: 1; border-bottom-width: 1">
+                              <TABLE datasrc="#data" BORDER="0" datapagesize="1" datafld="DRLG_RIG_PERSONNEL" WIDTH="100%" id="AutoNumber2" STYLE="BORDER-COLLAPSE: collapse" CELLPADDING="2" datafldx="">
+                                 <TBODY>
+                                    <TR>
+                                       <TD widthx="10%" height="100%">
+                                          <TABLE height="100%" border="0" cellpadding="5" cellspacing="0">
+                                             <TBODY>
+                                                <TR>
+                                                   <TD ALIGN="left" class="la" nowrap="true" valign="middle" style="color: gray;background-color: #FBF9EC;">Company</TD>
+                                                </TR>
+                                                <TR>
+                                                   <TD ALIGN="left" class="la" nowrap="true" valign="middle" style="color: gray;background-color: #FBF9EC;">Category</TD>
+                                                </TR>
+                                                <TR>
+                                                   <TD ALIGN="left" class="la" nowrap="true" valign="middle" style="color: gray;background-color: #FBF9EC;">No. of Persons</TD>
+                                                </TR>
+                                                <TR>
+                                                   <TD ALIGN="left" class="la" nowrap="true" valign="middle" style="color: gray;background-color: #FBF9EC;">Operating Hrs.</TD>
+                                                </TR>
+                                                <TR>
+                                                   <TD ALIGN="left" class="la" nowrap="true" valign="middle" style="color: gray;background-color: #FBF9EC;">On Location Hrs.</TD>
+                                                </TR>
+                                             </TBODY>
+                                          </TABLE>
+                                       </TD>
+                                       <TD widthx="10%">
+                                          <TABLE cellpadding="5" cellspacing="0" class="table1">
+                                             <TBODY>
+                                                <TR>
+                                                   <TD CLASS="la" VALIGN="middle" align="center">OTH</TD>
+                                                </TR>
+                                                <TR>
+                                                   <TD VALIGN="middle" align="center" CLASS="la">CTRG</TD>
+                                                </TR>
+                                                <TR>
+                                                   <TD CLASS="la" VALIGN="middle" align="center">13</TD>
+                                                </TR>
+                                                <TR>
+                                                   <TD VALIGN="middle" align="center" CLASS="la">12</TD>
+                                                </TR>
+                                                <TR>
+                                                   <TD CLASS="la" VALIGN="middle" align="center">24</TD>
+                                                </TR>
+                                             </TBODY>
+                                          </TABLE>
+                                       </TD>
+                                       <TD widthx="10%">
+                                          <TABLE cellpadding="5" cellspacing="0" class="table1">
+                                             <TBODY>
+                                                <TR>
+                                                   <TD CLASS="la" VALIGN="middle" align="center">RIG</TD>
+                                                </TR>
+                                                <TR>
+                                                   <TD VALIGN="middle" align="center" CLASS="la">RIG</TD>
+                                                </TR>
+                                                <TR>
+                                                   <TD CLASS="la" VALIGN="middle" align="center">43</TD>
+                                                </TR>
+                                                <TR>
+                                                   <TD VALIGN="middle" align="center" CLASS="la">12</TD>
+                                                </TR>
+                                                <TR>
+                                                   <TD CLASS="la" VALIGN="middle" align="center">24</TD>
+                                                </TR>
+                                             </TBODY>
+                                          </TABLE>
+                                       </TD>
+                                       <TD widthx="10%">
+                                          <TABLE cellpadding="5" cellspacing="0" class="table1">
+                                             <TBODY>
+                                                <TR>
+                                                   <TD CLASS="la" VALIGN="middle" align="center">RIG</TD>
+                                                </TR>
+                                                <TR>
+                                                   <TD VALIGN="middle" align="center" CLASS="la">OTHR</TD>
+                                                </TR>
+                                                <TR>
+                                                   <TD CLASS="la" VALIGN="middle" align="center">17</TD>
+                                                </TR>
+                                                <TR>
+                                                   <TD VALIGN="middle" align="center" CLASS="la">12</TD>
+                                                </TR>
+                                                <TR>
+                                                   <TD CLASS="la" VALIGN="middle" align="center">24</TD>
+                                                </TR>
+                                             </TBODY>
+                                          </TABLE>
+                                       </TD>
+                                       <TD widthx="10%">
+                                          <TABLE cellpadding="5" cellspacing="0" class="table1">
+                                             <TBODY>
+                                                <TR>
+                                                   <TD CLASS="la" VALIGN="middle" align="center">ARM</TD>
+                                                </TR>
+                                                <TR>
+                                                   <TD VALIGN="middle" align="center" CLASS="la">WSC</TD>
+                                                </TR>
+                                                <TR>
+                                                   <TD CLASS="la" VALIGN="middle" align="center">1</TD>
+                                                </TR>
+                                                <TR>
+                                                   <TD VALIGN="middle" align="center" CLASS="la">12</TD>
+                                                </TR>
+                                                <TR>
+                                                   <TD CLASS="la" VALIGN="middle" align="center">24</TD>
+                                                </TR>
+                                             </TBODY>
+                                          </TABLE>
+                                       </TD>
+                                       <TD CLASS="cell2x" WIDTH="90%">
+                                          <TABLE>
+                                             <TBODY>
+                                                <TR>
+                                                   <TD CLASS="l"></TD>
+                                                </TR>
+                                                <TR>
+                                                   <TD nowrap="" CLASS="l"></TD>
+                                                </TR>
+                                             </TBODY>
+                                          </TABLE>
+                                       </TD>
+                                       <TD CLASS="cell2x" width="10%">
+                                          <TABLE WIDTH="100%">
+                                             <TBODY>
+                                                <TR>
+                                                   <TD COLSPAN="2" CLASS="s" ALIGN="middle"> Total</TD>
+                                                </TR>
+                                                <TR>
+                                                   <TD ALIGN="middle" CLASS="l">74</TD>
+                                                </TR>
+                                             </TBODY>
+                                          </TABLE>
+                                       </TD>
+                                    </TR>
+                                 </TBODY>
+                              </TABLE>
+                           </TD>
+                        </TR>
+                        <TR>
+                           <TD CLASS="cell1t" ALIGN="middle">Trucks/Boats</TD>
+                           <TD CLASS="cell1t1" nowrap="" ALIGN="left" VALIGN="top" COLSPAN="10" stylex="border-left-style: solid; border-left-width: 1; border-right-style: solid; border-right-width: 1; border-top-width: 1; border-bottom-width: 1">
+                              <TABLE datasrc="#data" datafld="DRLG_OP_STATUS" BORDER="0" WIDTH="100%" id="AutoNumber2" STYLE="BORDER-COLLAPSE: collapse" BORDERCOLOR="#111111" CELLPADDING="2">
+                                 <TBODY>
+                                    <TR>
+                                       <TD CLASS="cell1x">
+                                          <TABLE WIDTH="100%">
+                                             <TBODY>
+                                                <TR>
+                                                   <TD COLSPAN="2" CLASS="cell1"> Standby/Tankers</TD>
+                                                </TR>
+                                                <TR>
+                                                   <TD nowrap="" ALIGN="middle" CLASS="l"></TD>
+                                                   <TD CLASS="s"></TD>
+                                                </TR>
+                                             </TBODY>
+                                          </TABLE>
+                                       </TD>
+                                       <TD CLASS="cell2x">
+                                          <TABLE WIDTH="100%">
+                                             <TBODY>
+                                                <TR>
+                                                   <TD COLSPAN="2" CLASS="cell1"></TD>
+                                                </TR>
+                                                <TR>
+                                                   <TD nowrap="" ALIGN="middle" CLASS="l"></TD>
+                                                   <TD CLASS="s"></TD>
+                                                </TR>
+                                             </TBODY>
+                                          </TABLE>
+                                       </TD>
+                                       <TD CLASS="cell2x">
+                                          <TABLE WIDTH="100%">
+                                             <TBODY>
+                                                <TR>
+                                                   <TD COLSPAN="2" CLASS="cell1"></TD>
+                                                </TR>
+                                                <TR>
+                                                   <TD nowrap="" ALIGN="middle" CLASS="l"></TD>
+                                                   <TD CLASS="s"></TD>
+                                                </TR>
+                                             </TBODY>
+                                          </TABLE>
+                                       </TD>
+                                       <TD CLASS="cell2x">
+                                          <TABLE WIDTH="100%">
+                                             <TBODY>
+                                                <TR>
+                                                   <TD COLSPAN="2" CLASS="cell1"></TD>
+                                                </TR>
+                                                <TR>
+                                                   <TD nowrap="" ALIGN="middle" CLASS="l"></TD>
+                                                   <TD CLASS="s"></TD>
+                                                </TR>
+                                             </TBODY>
+                                          </TABLE>
+                                       </TD>
+                                       <TD CLASS="cell2x" WIDTH="100%">
+                                          <TABLE WIDTH="100%">
+                                             <TBODY>
+                                                <TR>
+                                                   <TD COLSPAN="2" CLASS="cell1"></TD>
+                                                </TR>
+                                                <TR>
+                                                   <TD nowrap="" ALIGN="middle" CLASS="l"></TD>
+                                                   <TD CLASS="s"></TD>
+                                                </TR>
+                                             </TBODY>
+                                          </TABLE>
+                                       </TD>
+                                    </TR>
+                                 </TBODY>
+                              </TABLE>
+                           </TD>
+                        </TR>
+                        <TR>
+                           <TD CLASS="cell1t" ALIGN="middle">BULK</TD>
+                           <TD CLASS="cell1t1" nowrap="" ALIGN="left" VALIGN="top" COLSPAN="10" stylex="border-left-style: solid; border-left-width: 1; border-right-style: solid; border-right-width: 1; border-top-width: 1; border-bottom-width: 1">
+                              <TABLE datasrc="#data" datafld="DRLG_OP_STATUS" BORDER="0" WIDTH="100%" id="AutoNumber2" STYLE="BORDER-COLLAPSE: collapse" BORDERCOLOR="#111111" CELLPADDING="2">
+                                 <TBODY>
+                                    <TR>
+                                       <TD CLASS="cell1x" WIDTH="10%">
+                                          <TABLE WIDTH="100%">
+                                             <TBODY>
+                                                <TR>
+                                                   <TD COLSPAN="2" CLASS="cell1" nowrap=""> Drill Wtr.-BBLS</TD>
+                                                </TR>
+                                                <TR>
+                                                   <TD ALIGN="middle" CLASS="l"></TD>
+                                                   <TD CLASS="s"></TD>
+                                                </TR>
+                                             </TBODY>
+                                          </TABLE>
+                                       </TD>
+                                       <TD CLASS="cell2x" WIDTH="10%">
+                                          <TABLE WIDTH="100%">
+                                             <TBODY>
+                                                <TR>
+                                                   <TD COLSPAN="2" CLASS="cell1" nowrap=""> Pot Wtr.- 
+                                BBLS</TD>
+                                                </TR>
+                                                <TR>
+                                                   <TD ALIGN="middle" CLASS="l"></TD>
+                                                   <TD CLASS="s"></TD>
+                                                </TR>
+                                             </TBODY>
+                                          </TABLE>
+                                       </TD>
+                                       <TD CLASS="cell2x" WIDTH="10%">
+                                          <TABLE WIDTH="100%">
+                                             <TBODY>
+                                                <TR>
+                                                   <TD COLSPAN="2" CLASS="cell1" nowrap=""> Fuel- BBLS</TD>
+                                                </TR>
+                                                <TR>
+                                                   <TD ALIGN="middle" CLASS="l">21</TD>
+                                                   <TD CLASS="s"></TD>
+                                                </TR>
+                                             </TBODY>
+                                          </TABLE>
+                                       </TD>
+                                       <TD CLASS="cell2x" WIDTH="10%">
+                                          <TABLE WIDTH="100%">
+                                             <TBODY>
+                                                <TR>
+                                                   <TD COLSPAN="2" CLASS="cell1" nowrap=""> Barite- 
+                                SX</TD>
+                                                </TR>
+                                                <TR>
+                                                   <TD ALIGN="middle" CLASS="l"></TD>
+                                                   <TD CLASS="s"></TD>
+                                                </TR>
+                                             </TBODY>
+                                          </TABLE>
+                                       </TD>
+                                       <TD CLASS="cell2x" WIDTH="10%">
+                                          <TABLE WIDTH="100%">
+                                             <TBODY>
+                                                <TR>
+                                                   <TD COLSPAN="2" CLASS="cell1" nowrap=""> Bentonite 
+                                - SX</TD>
+                                                </TR>
+                                                <TR>
+                                                   <TD ALIGN="middle" CLASS="l"></TD>
+                                                   <TD CLASS="s"></TD>
+                                                </TR>
+                                             </TBODY>
+                                          </TABLE>
+                                       </TD>
+                                       <TD CLASS="cell2x" WIDTH="10%">
+                                          <TABLE WIDTH="100%">
+                                             <TBODY>
+                                                <TR>
+                                                   <TD COLSPAN="2" CLASS="cell1" nowrap=""> Cement G- SX</TD>
+                                                </TR>
+                                                <TR>
+                                                   <TD ALIGN="middle" CLASS="l"></TD>
+                                                   <TD CLASS="s"></TD>
+                                                </TR>
+                                             </TBODY>
+                                          </TABLE>
+                                       </TD>
+                                       <TD CLASS="cell2x" WIDTH="100%"></TD>
+                                    </TR>
+                                 </TBODY>
+                              </TABLE>
+                           </TD>
+                        </TR>
+                     </TBODY>
+                     <tfoot class="report-footer">
+                        <TD CLASS="cell1t" ALIGN="middle">REPAIR ASAP</TD>
+                        <TD CLASS="cell1t1" nowrap="" ALIGN="left" VALIGN="top" COLSPAN="10" stylex="border-left-style: solid; border-left-width: 1; border-right-style: solid; border-right-width: 1; border-top-width: 1; border-bottom-width: 1">
+                           <TABLE datasrc="#data" datafld="DRLG_OP_STATUS" BORDER="0" WIDTH="100%" id="AutoNumber2" STYLE="BORDER-COLLAPSE: collapse" BORDERCOLOR="#111111" CELLPADDING="2">
+                              <TBODY>
+                                 <TR>
+                                    <TD CLASS="cell2x">
+                                       <TABLE WIDTH="100%">
+                                          <TBODY>
+                                             <TR>
+                                                <TD COLSPAN="2" CLASS="cell1"> Instrumentation</TD>
+                                             </TR>
+                                             <TR>
+                                                <TD nowrap="" ALIGN="middle" CLASS="l"></TD>
+                                                <TD CLASS="s"></TD>
+                                             </TR>
+                                          </TBODY>
+                                       </TABLE>
+                                    </TD>
+                                    <TD CLASS="cell2x" WIDTH="100%">
+                                       <TABLE WIDTH="100%">
+                                          <TBODY>
+                                             <TR>
+                                                <TD COLSPAN="2" CLASS="cell1"> Other</TD>
+                                             </TR>
+                                             <TR>
+                                                <TD nowrap="" CLASS="l"></TD>
+                                                <TD CLASS="s"></TD>
+                                             </TR>
+                                          </TBODY>
+                                       </TABLE>
+                                    </TD>
+                                    <TD CLASS="s" VALIGN="bottom">Reporter</TD>
+                                    <TD VALIGN="bottom" CLASS="l" nowrap=""></TD>
+                                 </TR>
+                                 <TR>
+                                    <TD CLASS="cell1x" colspan="2">
+                                       <TABLE WIDTH="100%">
+                                          <TBODY>
+                                             <TR>
+                                                <TD COLSPAN="2" CLASS="cell1" nowrap=""> Computer, Communication &amp; V-Sat Issues</TD>
+                                             </TR>
+                                             <TR>
+                                                <TD nowrap="" ALIGN="left" CLASS="l"></TD>
+                                                <TD CLASS="s"></TD>
+                                             </TR>
+                                          </TBODY>
+                                       </TABLE>
+                                    </TD>
+                                 </TR>
+                              </TBODY>
+                           </TABLE>
+                        </TD>
+                     </tfoot>
+                  </TABLE>
+               </TD>
+            </TR>
+            <tr>
+               <th align="center"> Copyright 2010 Saudi Aramco. All Rights Reserved</th>
+            </tr>
+         </TBODY>
+      </TABLE>
+   </BODY>
+</HTML>
